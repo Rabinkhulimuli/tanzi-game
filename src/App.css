@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .dice-box{
   max-width:100px;
    max-height:100px;
@@ -7,6 +10,7 @@
   align-items:center;
   justify-content: center;
   font-size:2rem;
+  border-radius: 10px;
   padding:0;
   gap:5px;
 }
@@ -30,7 +34,7 @@
   display:grid;
   grid-template:auto auto /repeat(5,1fr);
   gap: 5px;
-  background-color: red;
+  box-shadow:0px 2px 4px 8px rgba(228, 9, 191, 0.726);
   cursor:pointer;
 }
 .outer-container{
@@ -43,15 +47,14 @@
   padding:20px;
   border:5px solid black;
   border-radius:20px;
-  margin:20px 5px;
+  margin:20px 0px;
 }
 .big-box{
   background-color:rgba(10, 10, 10, 0.842);
   padding:20px 0px;
 }
 .dice-roll{
-  width:200px;
-  height:50px;
+ padding:5vw 10vw;
   border-radius:10px;
   font-size:2rem;
   text-transform: uppercase;
@@ -93,8 +96,11 @@
   font-weight:600;
 }
 @media  (max-width:500px) {
-  .help-p{
-    margin-top:-130px;
+  .in-h2{
+    font-size:2.5rem;
   }
-  
+  .outer-container{
+    width:100%;
+    max-width: 400px;
+  }
 }
