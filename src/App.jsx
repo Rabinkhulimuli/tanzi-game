@@ -66,7 +66,7 @@ export default function App(){
       
     }
   return (
-    <>
+    <div className="outer-box">
         <div className="big-box">
             <div className="outer-container " >
                   <div className="title"> 
@@ -89,6 +89,6 @@ export default function App(){
 
         </div>
         
-    </>
+    </div>
   )
 }
